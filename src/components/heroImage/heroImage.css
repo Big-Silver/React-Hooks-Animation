@@ -1,0 +1,38 @@
+.hero-section {
+  background-image: url(../../assets/images/termsofuse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+      
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 460px 0 110px;
+}
+
+.hero-title, .hero-description {
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: 50px;
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
+.hero-description {
+  font-size: 17px;
+  width: 360px;
+  line-height: 1em;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-section {
+    padding: 0 100px 0 30px;
+  }
+}

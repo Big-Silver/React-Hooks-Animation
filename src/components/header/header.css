@@ -9,6 +9,8 @@
 
 .custom-menu {
     background-color: #FCFBFA;
+    position: absolute !important;
+    width: 100%;
 }
 
 .custom-menu .navbar-brand {
