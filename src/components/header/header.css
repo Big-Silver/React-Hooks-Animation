@@ -1,0 +1,32 @@
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+.custom-header {
+    background-color: #2A2726;
+    height: 70px;
+}
+
+.custom-menu {
+    background-color: #FCFBFA;
+}
+
+.custom-menu .navbar-brand {
+    color: #575757 !important;
+}
+
+.custom-menu .nav-link {
+    color: #929292 !important;
+}
+
+.custom-menu .nav-link:hover {
+    color: #3E3E3E !important;
+}
+
+.mobile-nav {
+    background-color: #2A2726;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 70px;
+}
