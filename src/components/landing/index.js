@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import HeroImage from '../heroImage';
 import Category from '../category';
+import CustomCaruosel from '../carousel';
+import Advertisement from '../advertisement';
 import PedroImg from '../../assets/images/Pedro.jpg';
 
 const mockImages = () => {
@@ -23,6 +25,8 @@ export default function LandingPage(props) {
     <div>
       <HeroImage />
       <Category data={mockImages()} />
+      <CustomCaruosel />
+      <Advertisement />
     </div>
   );
 }

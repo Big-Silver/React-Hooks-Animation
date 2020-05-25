@@ -1,0 +1,47 @@
+.carousel-item {
+  background-color: #1e1e1e;
+  padding: 40px 360px;
+}
+
+.carousel-item p {
+  color: #ffffff;
+  margin: 0px;
+}
+
+.carousel-caption {
+  position: relative !important;
+  right: unset !important;
+  bottom: unset !important;
+  left: unset !important;
+  margin-bottom: 60px;
+}
+
+.cCarousel-quote {
+  color: #0596d6;
+  font-size: 80px;
+}
+
+.cCarousel-title {
+  margin-left: 30px !important;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cCarousel-author {
+  text-align: right;
+  font-size: 20px;
+  color: #0596d6 !important;
+}
+
+.carousel-indicators li {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: transparent !important;
+  border-radius: 50% !important;
+  border: 1px solid #0596d6 !important;
+}
+
+.carousel-indicators .active {
+  background-color: #0596d6 !important;
+}

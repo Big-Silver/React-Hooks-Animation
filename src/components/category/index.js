@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ViewMoreButton } from '../buttons';
 import './category.css';
 
 export default function Category(props) {
@@ -14,8 +15,8 @@ export default function Category(props) {
       </div>
       <div className='category-images'>
         {console.log(props.data)}
-        {props.data.map((d) => (
-          <div className='card'>
+        {props.data.map((d, i) => (
+          <div className='card' key={i}>
             <img
               className='card-img-top'
               src={d.src}
@@ -28,7 +29,7 @@ export default function Category(props) {
           </div>
         ))}
       </div>
-      <button className='category-more'>VIEW MORE</button>
+      <ViewMoreButton onClick={() => {console.log('@@@@@@@')}} text='VIEW MORE' />
     </div>
   );
 }
