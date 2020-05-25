@@ -25,10 +25,12 @@ p {
 
 .category-images {
   column-count: 4;
+  margin-bottom: 45px;
 }
 
 .card {
-  margin-bottom: 50px;
+  padding-top: 35px;
+  margin-bottom: 15px;
   border: none !important;
 }
 
@@ -61,6 +63,13 @@ p {
   font-size: 12px;
 }
 
+.cCard-ribbon {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #f9f9f9;
+  border-right: 100px solid transparent;
+}
 
 @media only screen and (max-width: 900px) {
   .category-images {
