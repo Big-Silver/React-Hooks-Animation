@@ -45,3 +45,17 @@
 .carousel-indicators .active {
   background-color: #0596d6 !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .carousel-caption {
+    margin-bottom: 20px;
+  }
+
+  .carousel-item {
+    padding: 40px;
+  }
+
+  .cCarousel-author {
+    margin-top: 20px !important;
+  }
+}

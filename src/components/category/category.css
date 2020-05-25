@@ -27,25 +27,17 @@ p {
   column-count: 4;
 }
 
-@media only screen and (max-width: 900px) {
-  .category-images {
-    column-count: 2;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .category-images {
-    column-count: 1;
-  }
-
-  .category-description {
-    width: 280px;
-  }
-}
-
 .card {
   margin-bottom: 50px;
   border: none !important;
+}
+
+.card {
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card-img-top {
@@ -67,4 +59,21 @@ p {
 .card-text {
   text-align: left;
   font-size: 12px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .category-images {
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .category-images {
+    column-count: 1;
+  }
+
+  .category-description {
+    width: 280px;
+  }
 }

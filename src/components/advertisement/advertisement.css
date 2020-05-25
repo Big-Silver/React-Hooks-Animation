@@ -6,3 +6,10 @@
 .cAdvertisement-title {
   font-size: 33px;
 }
+
+@media only screen and (max-width: 600px) {
+  .custom-advertisement {
+    padding: 50px 50px;
+    flex-direction: column;
+  }
+}

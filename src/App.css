@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.show-desktop {
+  display: initial;
+}
+
+@media only screen and (max-width: 600px) {
+  .show-desktop {
+    display: none;
+  }
+}

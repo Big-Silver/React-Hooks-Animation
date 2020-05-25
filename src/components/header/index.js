@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAlignJustify, faSearch } from '@fortawesome/free-solid-svg-icons';
 import './header.css';
+import logoImg from '../../assets/images/logo.png';
 
 export default function Header(props) {
   const [toggleNav, setToggleNav] = useState(false);
@@ -10,10 +11,10 @@ export default function Header(props) {
   const show = toggleNav ? ' show mobile-nav' : '';
 
   return (
-    <header>
-      <nav className='navbar navbar-expand-lg navbar-light sticky-top custom-header'>
+    <header className='sticky-top'>
+      <nav className='navbar navbar-expand-lg navbar-light custom-header'>
         <a className='navbar-brand' href='#'>
-          iFIT
+          <img src={logoImg} alt='logo_image'></img>
         </a>
         <button
           className='navbar-toggler text-white'

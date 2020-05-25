@@ -19,34 +19,22 @@ export default function CustomCaruosel(props) {
       indicators={true}
       controls={false}
     >
-      <Carousel.Item>
-        <Carousel.Caption>
-          <div className='d-flex justify-content-center align-items-center'>
-            <FontAwesomeIcon icon={faQuoteLeft} className='cCarousel-quote' />
-            <p className='cCarousel-title'>
-              To date I have lost 14 Kilos (30 pounds) and my fitnes level is at
-              least the same as when I was activity engaged in sport (if not
-              better), thanks to iFit and the range and variation of fitness
-              programs available.
-            </p>
-          </div>
-          <p className='cCarousel-author'>-Graham Lambourne</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <Carousel.Caption>
-          <div className='d-flex justify-content-center align-items-center'>
-            <FontAwesomeIcon icon={faQuoteLeft} className='cCarousel-quote' />
-            <p className='cCarousel-title'>
-              To date I have lost 14 Kilos (30 pounds) and my fitnes level is at
-              least the same as when I was activity engaged in sport (if not
-              better), thanks to iFit and the range and variation of fitness
-              programs available.
-            </p>
-          </div>
-          <p className='cCarousel-author'>-Graham Lambourne</p>
-        </Carousel.Caption>
-      </Carousel.Item>
+      {props.data.map((carousel, i) => {
+        return (
+          <Carousel.Item key={i}>
+            <Carousel.Caption>
+              <div className='d-flex justify-content-center align-items-center'>
+                <FontAwesomeIcon
+                  icon={faQuoteLeft}
+                  className='cCarousel-quote'
+                />
+                <p className='cCarousel-title'>{carousel.title}</p>
+              </div>
+              <p className='cCarousel-author'>{carousel.author}</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        );
+      })}
     </Carousel>
   );
 }

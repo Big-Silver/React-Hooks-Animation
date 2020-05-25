@@ -2,9 +2,15 @@
     color: #ffffff !important;
 }
 
+.navbar-brand img {
+    width: 90px;
+    height: 30px;
+}
+
 .custom-header {
     background-color: #2A2726;
     height: 70px;
+    padding: 10px 40px !important;
 }
 
 .custom-menu {

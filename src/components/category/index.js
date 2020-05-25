@@ -14,7 +14,6 @@ export default function Category(props) {
         </p>
       </div>
       <div className='category-images'>
-        {console.log(props.data)}
         {props.data.map((d, i) => (
           <div className='card' key={i}>
             <img
@@ -29,7 +28,7 @@ export default function Category(props) {
           </div>
         ))}
       </div>
-      <ViewMoreButton onClick={() => {console.log('@@@@@@@')}} text='VIEW MORE' />
+      <ViewMoreButton onClick={props.viewMore} text='VIEW MORE' />
     </div>
   );
 }
