@@ -10,6 +10,7 @@ import {
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import { Dropdown } from 'react-bootstrap';
+import { LANGUAGES } from '../../consts';
 import './footer.css';
 
 const contacts = [
@@ -74,8 +75,6 @@ const socialMedias = [
   },
 ];
 
-const languages = ['ENGLISH', 'FRENCH', 'SPAINISH', 'PORTUGUESE', 'DUTCH'];
-
 export default function Footer(props) {
   const [selectedLang, setSelectedLang] = useState('ENGLISH');
 
@@ -83,8 +82,8 @@ export default function Footer(props) {
     <footer>
       <div className='container-fluid'>
         <div className='row d-flex custom-footer align-items-center'>
-          <div className='cFooter-contact d-flex col-md-8 col-sm-12'>
-            <ul className='d-flex cFooter-contact-list'>
+          <div className='custom-footer-contact d-flex col-md-8 col-sm-12'>
+            <ul className='d-flex custom-footer-contact-list'>
               {contacts.map((contact, i) => {
                 return (
                   <li key={i}>
@@ -94,7 +93,7 @@ export default function Footer(props) {
                 );
               })}
             </ul>
-            <ul className='d-flex cFooter-social'>
+            <ul className='d-flex custom-footer-social'>
               {socialMedias.map((social, i) => (
                 <li key={i}>
                   <a href={social.href}>
@@ -104,7 +103,7 @@ export default function Footer(props) {
               ))}
             </ul>
           </div>
-          <div className='cFooter-copyright d-flex align-items-center justify-content-center col-md-4 col-sm-12'>
+          <div className='custom-footer-copyright d-flex align-items-center justify-content-center col-md-4 col-sm-12'>
             <p>Copyright iFitcom. All rights reserved.</p>
             <Dropdown>
               <Dropdown.Toggle id='dropdown-language'>
@@ -112,7 +111,7 @@ export default function Footer(props) {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                {languages.map((lang, i) => {
+                {LANGUAGES.map((lang, i) => {
                   return (
                     <Dropdown.Item onClick={() => setSelectedLang(lang)} key={i}>
                       {lang}

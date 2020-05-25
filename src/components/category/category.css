@@ -63,7 +63,7 @@ p {
   font-size: 12px;
 }
 
-.cCard-ribbon {
+.custom-card-ribbon {
   position: absolute;
   width: 0;
   height: 0;

@@ -21,7 +21,7 @@ export default function Category(props) {
               src={d.src}
               alt={'Card image cap' + d.src}
             />
-            <span className='cCard-ribbon'></span>
+            <span className='custom-card-ribbon'></span>
             <div className='card-body'>
               <p className='card-title'>{d.name}</p>
               <p className='card-text'>{d.title}</p>

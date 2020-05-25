@@ -26,11 +26,11 @@ export default function CustomCaruosel(props) {
               <div className='d-flex justify-content-center align-items-center'>
                 <FontAwesomeIcon
                   icon={faQuoteLeft}
-                  className='cCarousel-quote'
+                  className='custom-carousel-quote'
                 />
-                <p className='cCarousel-title'>{carousel.title}</p>
+                <p className='custom-carousel-title'>{carousel.title}</p>
               </div>
-              <p className='cCarousel-author'>{carousel.author}</p>
+              <p className='custom-carousel-author'>{carousel.author}</p>
             </Carousel.Caption>
           </Carousel.Item>
         );

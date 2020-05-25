@@ -8,7 +8,7 @@ import logoImg from '../../assets/images/logo.png';
 export default function Header(props) {
   const [toggleNav, setToggleNav] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
-  const show = toggleNav ? ' show mobile-nav' : '';
+  const show = toggleNav ? 'show mobile-nav' : '';
 
   return (
     <header className='sticky-top'>
@@ -20,8 +20,8 @@ export default function Header(props) {
           className='navbar-toggler text-white'
           type='button'
           data-toggle='collapse'
-          data-target='#navbarText'
-          aria-controls='navbarText'
+          data-target='#navbar-text'
+          aria-controls='navbar-text'
           aria-expanded='false'
           aria-label='Toggle navigation'
           onClick={() => {
@@ -31,7 +31,7 @@ export default function Header(props) {
         >
           <FontAwesomeIcon icon={faAlignJustify} />
         </button>
-        <div className={'collapse navbar-collapse' + show} id='navbarText'>
+        <div className={`collapse navbar-collapse ${show}`} id='navbar-text'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item active'>
               <a className='nav-link' href='#'>
@@ -45,7 +45,7 @@ export default function Header(props) {
             </li>
             <li className='nav-item'>
               <a
-                className='nav-link'
+                className='nav-link custom-header-menu'
                 href='#'
                 onClick={() => {
                   setToggleNav(false);

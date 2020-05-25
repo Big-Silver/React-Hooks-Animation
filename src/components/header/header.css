@@ -17,6 +17,7 @@
     background-color: #FCFBFA;
     position: absolute !important;
     width: 100%;
+    padding: 10px 40px !important;
 }
 
 .custom-menu .navbar-brand {
@@ -37,4 +38,8 @@
     width: 100%;
     left: 0;
     top: 70px;
+}
+
+.custom-header-menu svg {
+    margin-left: 5px;
 }
